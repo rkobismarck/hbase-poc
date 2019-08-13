@@ -12,7 +12,7 @@ Sample HBase Implementation.
 There are three basic things that you need to know about a Docker, first of all i'm going to suposse that you know what's Docker and how does it works but if you don't just dont worry and go to the [Docker Site](https://docs.docker.com/get-started/#conclusion-of-part-one) and take yourself into a journey of UNIX and containers. But let's go to the point you need to consider the **Dockerfile** as like a recipe for the container construction.
 
 ### Let's get start with this.
-1. First of all you have two choices, [clone](https://github.com/rkobismarck/docker).
+1. First of all you have to, [clone](https://github.com/rkobismarck/hbase-poc).
 2. Execute the next command:
 ```console
 foo@bar:hbase-poc robertotrujillo$./start-cluster.sh
