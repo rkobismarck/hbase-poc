@@ -38,6 +38,8 @@ docker run -itd \
 				-p 9000:9000 \
 				-p 2222:2222 \
 				-p 16010:16010 \
+				-p 8042:8042 \
+				-p 2181:2181 \
                 --name hadoop-master \
                 --hostname hadoop-master \
 				-v $PWD/data:/data \

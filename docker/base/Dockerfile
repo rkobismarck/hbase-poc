@@ -5,10 +5,10 @@ WORKDIR /root
 
 RUN apt-get update && apt-get install -y openssh-server openjdk-8-jdk wget
 
-RUN wget http://apache.rediris.es/hadoop/common/hadoop-2.7.7/hadoop-2.7.7.tar.gz && \
-    tar -xzvf hadoop-2.7.7.tar.gz && \
-    mv hadoop-2.7.7 /usr/local/hadoop && \
-    rm hadoop-2.7.7.tar.gz
+RUN wget https://archive.apache.org/dist/hadoop/common/hadoop-2.6.5/hadoop-2.6.5.tar.gz && \
+    tar -xzvf hadoop-2.6.5.tar.gz && \
+    mv hadoop-2.6.5 /usr/local/hadoop && \
+    rm hadoop-2.6.5.tar.gz
 
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 
 ENV HADOOP_HOME=/usr/local/hadoop 
@@ -49,3 +49,7 @@ EXPOSE 19888
 EXPOSE 8030 8031 8032 8033 8040 8042 8088 8188
 # OTHER
 EXPOSE 49707 2122
+# HBASE
+EXPOSE 16010
+# ZOOKEPER
+EXPOSE 2181

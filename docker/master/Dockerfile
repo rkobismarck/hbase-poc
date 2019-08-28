@@ -3,10 +3,10 @@ LABEL maintainer="robetruj"
 
 WORKDIR /root
 
-RUN wget http://www-us.apache.org/dist/hbase/stable/hbase-1.4.10-bin.tar.gz && \
-    tar -xzvf hbase-1.4.10-bin.tar.gz && \
-    mv hbase-1.4.10 /usr/local/hbase && \
-    rm hbase-1.4.10-bin.tar.gz
+RUN wget https://archive.apache.org/dist/hbase/1.2.3/hbase-1.2.3-bin.tar.gz && \
+    tar -xzvf hbase-1.2.3-bin.tar.gz && \
+    mv hbase-1.2.3 /usr/local/hbase && \
+    rm hbase-1.2.3-bin.tar.gz
 
 ENV HBASE_HOME=/usr/local/hbase
 ENV PATH=$PATH:$HBASE_HOME/bin
